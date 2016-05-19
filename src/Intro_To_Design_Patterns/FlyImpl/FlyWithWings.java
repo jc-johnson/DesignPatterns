@@ -6,11 +6,10 @@ package Intro_To_Design_Patterns.FlyImpl;
 
 import Intro_To_Design_Patterns.Interfaces.*;
 
-public class FlyWithWings extends FlyBehavior{
+public class FlyWithWings implements FlyBehavior{
 
-    @Override
     public void fly(){
-
+        System.out.println("I'm flying!");
     }
 
 }

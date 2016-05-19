@@ -11,16 +11,23 @@ public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    abstract void Duck();
+    public Duck(){}
 
-    // all that matters is that the duck knows how to quack
+    // all that matters is that the instantiated duck knows how to quack
+    // delegate to the behavior class
+    // calling the interface method
     public void PerformQuack(){
         quackBehavior.quack();
     }
 
-    abstract void swim();
+    // delegate to the behavior class
+    // calling the interface method
+    public void PerformFly() {flyBehavior.fly();}
 
-    abstract void display();
+    // subclass can each choose how to display itself
+    public abstract void display();
 
-    abstract void PerformFly();
+    public void swim() {
+        System.out.println("All ducks float, even decoys!");
+    }
 }

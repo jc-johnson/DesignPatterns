@@ -16,8 +16,13 @@ public class MallardDuck  extends Duck {
     // is called, the responsibility for the
     // quack is delegated to the Quack object
     // and we get a real quack
+
+    // The MallardDuck's quack behavior and fly behavior
+    // depends on how the inherited instance variables
+    // from Duck are polymorphized
     public MallardDuck() {
         // Inherits instance variables from Duck
+        // these can easily be changed at runtime
         quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();
     }
@@ -27,8 +32,8 @@ public class MallardDuck  extends Duck {
 
     }
 
-    @Override
-    void quack() {
+
+    void Performquack() {
 
     }
 
@@ -39,6 +44,7 @@ public class MallardDuck  extends Duck {
 
     public void display(){
         // looks like a Mallard
+        System.out.println("I'm a real Mallard duck");
     }
 
     @Override
