@@ -5,10 +5,10 @@ import Intro_To_Design_Patterns.Interfaces.QuackBehavior;
 /**
  * Created by jordan on 5/18/16.
  */
-public class Quack extends QuackBehavior {
+public class Quack implements QuackBehavior {
 
     @Override
     public void quack() {
-        // implements duck quacking
+        System.out.println("Quack");
     }
 }

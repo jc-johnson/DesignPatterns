@@ -27,30 +27,8 @@ public class MallardDuck  extends Duck {
         flyBehavior = new FlyWithWings();
     }
 
-    @Override
-    void Duck() {
-
-    }
-
-
-    void Performquack() {
-
-    }
-
-    @Override
-    void swim() {
-
-    }
-
     public void display(){
         // looks like a Mallard
         System.out.println("I'm a real Mallard duck");
     }
-
-    @Override
-    void PerformFly() {
-
-    }
-
-    
 }

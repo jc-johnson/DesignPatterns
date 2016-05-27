@@ -8,27 +8,8 @@ import Intro_To_Design_Patterns.Ducks.Duck;
 public class RubberDuck extends Duck {
 
     @Override
-    void Duck() {
-
-    }
-
-    @Override
-    void quack(){
-        // overridden to squeak
-    }
-
-    @Override
-    void swim() {
-
-    }
-
-    @Override
-    void display() {
+    public void display() {
         // looks like a rubber duck
     }
 
-    @Override
-    void fly() {
-
-    }
 }

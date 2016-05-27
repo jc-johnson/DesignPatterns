@@ -1,9 +1,8 @@
 package Intro_To_Design_Patterns.Interfaces;
 
 /**
- * Created by jordan on 5/18/16.
+ * Created by Jordan on 5/26/2016.
  */
-public abstract class QuackBehavior {
-
-    public abstract void quack();
+public interface QuackBehavior {
+    public void quack();
 }
